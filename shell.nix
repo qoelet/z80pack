@@ -6,6 +6,11 @@ stdenv.mkDerivation rec {
   buildInputs = [
     gcc
     gnumake
+    libjpeg
+    libGL
+    mesa_glu
+    x11
+    xorg.libXmu
   ];
 
   shellHook = ''
